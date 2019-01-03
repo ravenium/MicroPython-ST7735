@@ -3,8 +3,8 @@ from sysfont import sysfont
 from machine import SPI,Pin
 import time
 import math
-spi = SPI(2, baudrate=20000000, polarity=0, phase=0, sck=Pin(14), mosi=Pin(13), miso=Pin(12))
-tft=TFT(spi,16,17,18)
+spi = SPI(2, baudrate=20000000, polarity=0, phase=0, sck=Pin(18), mosi=Pin(23), miso=Pin(19))
+tft=TFT(spi,27,33,14)
 tft.initr()
 tft.rgb(True)
 
